@@ -1,9 +1,15 @@
+#name of workflow
 name: Hello
+
+#triggered on
 on:
   push:
       branches: [main]
+#jobs inside workflow      
 jobs:
+#job name
     greet:
+    #github runner every job runs on runner(server)
         runs-on: ubuntu-latest
         steps:
          - name: say hello to users
